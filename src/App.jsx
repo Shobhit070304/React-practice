@@ -1,17 +1,19 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
-import ReactFragment from "./Concepts/React-fragment/ReactFragment";
+// import { Routes, Route } from "react-router-dom";
+// import { lazy, Suspense } from "react";
+// import ReactFragment from "./Concepts/React-fragment/ReactFragment";
+
+import Parent from "./Concepts/Use-Callback/Parent";
 
 // Lazy load components for code splitting
-const Parent = lazy(() => import("./Concepts/Code-splitting/Parent"));
-const ManualWay = lazy(() =>
-  import("./Concepts/List-Virtualization/ManualWay")
-);
+// const Parent = lazy(() => import("./Concepts/Code-splitting/Parent"));
+// const ManualWay = lazy(() =>
+//   import("./Concepts/List-Virtualization/ManualWay")
+// );
 
 // Main App component that sets up routes and lazy loading for code splitting and shows a loading fallback until the components are loaded
 function App() {
-  return <ReactFragment />;
+  return <Parent />;
 }
 
 export default App;
