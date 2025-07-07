@@ -3,7 +3,8 @@ import "./App.css";
 // import { lazy, Suspense } from "react";
 // import ReactFragment from "./Concepts/React-fragment/ReactFragment";
 
-import Parent from "./Concepts/Use-Callback/Parent";
+// import Parent from "./Concepts/Use-Callback/Parent";
+import Parent from "./Concepts/Use-Ref/Parent";
 
 // Lazy load components for code splitting
 // const Parent = lazy(() => import("./Concepts/Code-splitting/Parent"));
