@@ -12,8 +12,10 @@ import { Routes, Route } from "react-router-dom";
 // import Contact from "./Concepts/React-routing/Contact";
 // import Navbar from "./Concepts/React-routing/Navbar";
 
-import Home from "./Concepts/Higher-order-component/Home";
-import Dashboard from "./Concepts/Higher-order-component/Dashboard";
+// import Home from "./Concepts/Higher-order-component/Home";
+// import Dashboard from "./Concepts/Higher-order-component/Dashboard";
+
+import Parent from "./Concepts/Component-Lifecycle/Parent";
 
 // Lazy load components for code splitting
 // const Parent = lazy(() => import("./Concepts/Code-splitting/Parent"));
@@ -27,8 +29,9 @@ function App() {
     <>
       {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Parent />} />
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact/:name" element={<Contact />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} /> */}
