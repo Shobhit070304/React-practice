@@ -15,7 +15,9 @@ import { Routes, Route } from "react-router-dom";
 // import Home from "./Concepts/Higher-order-component/Home";
 // import Dashboard from "./Concepts/Higher-order-component/Dashboard";
 
-import Parent from "./Concepts/Component-Lifecycle/Parent";
+// import Parent from "./Concepts/Component-Lifecycle/Parent";
+import ErrorBoundary from "./Concepts/Error-Boundary/ErrorBoundary";
+import MyComponent from "./Concepts/Error-Boundary/MyComponent";
 
 // Lazy load components for code splitting
 // const Parent = lazy(() => import("./Concepts/Code-splitting/Parent"));
@@ -28,14 +30,17 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <Routes>
+      {/* <Routes> */}
         {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/" element={<Parent />} />
+        {/* <Route path="/" element={<Parent />} /> */}
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact/:name" element={<Contact />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} /> */}
-      </Routes>
+        <ErrorBoundary>
+          <MyComponent />
+        </ErrorBoundary>
+      {/* </Routes> */}
     </>
   );
 }

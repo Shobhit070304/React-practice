@@ -15,6 +15,7 @@ A simple React project demonstrating core and advanced React concepts, built wit
 - **List Virtualization**: Efficiently rendering large lists
 - **Lazy Loading**: Load images/components only when needed
 - **Memoization**: Optimizing re-renders with `React.memo`
+- **Error Boundaries**: Catch and handle JavaScript errors in React components
 
 ## Getting Started
 
@@ -31,4 +32,5 @@ A simple React project demonstrating core and advanced React concepts, built wit
 ## Project Structure
 
 - `src/Concepts/` — Each folder demonstrates a specific React concept with simple, focused examples.
+- `src/Concepts/Error-Boundary/` — Example of error boundaries in React.
 - `src/App.jsx` — Main entry point, switch between concepts as needed.
